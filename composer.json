@@ -1,0 +1,21 @@
+{
+    "name": "mastuyink/yii2-sneat",
+    "description": "Sneat Template Asset Register for yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," yii2 sneat"," yii2 sneat template"],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Abdul Aziz (Mastuyink)",
+        "email": "aziest99@gmail.com"
+      }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mastuyink\\templates\\yii2sneat\\": "src"
+        }
+    }
+}
