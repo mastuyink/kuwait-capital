@@ -32,7 +32,7 @@ to the require section of your `composer.json` file then run `composer update`
 
 ### Template Docs And Ui Components
 
-Visit [Official Docs](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/https:/)
+Visit [Official Docs](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation)
 
 ### Template Demo / Preview
 
