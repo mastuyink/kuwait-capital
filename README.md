@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist mastuyink/yii2-sneat "*"
+php composer.phar require --prefer-dist mastuyink/yii2-sneat "dev-master"
 ```
 
 or add
 
 ```
-"mastuyink/yii2-sneat": "*"
+"mastuyink/yii2-sneat": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
