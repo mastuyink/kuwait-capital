@@ -28,7 +28,6 @@ $this->registerLinkTag(['rel' => 'preconnect', 'href' => 'https://fonts.gstatic.
 <div class="container-xxl">
   <div class="authentication-wrapper authentication-basic container-p-y">
     <div class="authentication-inner">
-      <!-- Register -->
       <div class="card">
         <div class="card-body">
           <?= $content ?>

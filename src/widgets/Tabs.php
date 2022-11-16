@@ -3,6 +3,40 @@ declare(strict_types=1);
 
 namespace mastuyink\templates\yii2sneat\widgets;
 
+
+/*
+ * The following example shows how to use Menu:
+ *
+ * ```php
+ * <?= Tabs::pills([
+ *   'items' => [
+ *     [
+ *         'label'   => 'One',
+ *         'content' => 'Anim pariatur cliche...',
+ *         'active'  => true
+ *     ],
+ *     [
+ *         'label'   => 'Two',
+ *         'content' => 'Content Number Two',
+ *     ],
+ *   ],
+ * ])?>
+ * 
+ * <?= Tabs::tabs([
+ *   'items' => [
+ *     [
+ *         'label'   => 'One',
+ *         'content' => 'Anim pariatur cliche...',
+ *         'active'  => true
+ *     ],
+ *     [
+ *         'label'   => 'Two',
+ *         'content' => 'Content Number Two',
+ *     ],
+ *   ],
+ * ])?>
+ * ```
+*/
 class Tabs extends \yii\bootstrap5\Tabs
 {
 

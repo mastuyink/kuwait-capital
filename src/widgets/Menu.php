@@ -3,6 +3,40 @@ declare(strict_types=1);
 
 namespace mastuyink\templates\yii2sneat\widgets;
 
+/*
+ * The following example shows how to use Menu:
+ *
+ * ```php
+ * <?= Menu::widget([
+ *       'items' => [
+ *         [
+ *           'label' => 'Dashboard',
+ *           'icon' => 'fa fa-home',
+ *           'url'   => Yii::$app->homeUrl,
+ *         ],
+ *         [
+ *           'label'  => 'Admin',
+ *           'header' => true,
+ *         ],
+ *         [
+ *           'label'  => 'Users',
+ *           'icon'   => 'fa fa-users', // Full icon class for font awesome 5
+ *           'url'    => ['/'.$moduleId.'/user/index'],
+ *           'active' => ($controllerId == 'user')
+ *         ],
+ *         [
+ *           'label' => 'Products',
+ *           'icon'  => 'fa-solid fa-clipboard-list',
+ *           'url'   => ['product/index'],
+ *           'items' => [
+ *             ['label' => 'New Arrivals', 'url' => ['product/index', 'tag' => 'new']],
+ *             ['label' => 'Most Popular', 'url' => ['product/index', 'tag' => 'popular']],
+ *           ]
+ *         ],
+ *       ],
+ *     ]); ?>
+ * ```
+*/
 class Menu extends \yii\widgets\Menu
 {
   public function init()
