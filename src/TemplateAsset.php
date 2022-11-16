@@ -32,9 +32,17 @@ class TemplateAsset extends AssetBundle
     ];
 
     public $linkAssets = true;
+
     public function registerAssetFiles($view)
     {
+      parent::registerAssetFiles($view);
       $manager = $view->getAssetManager();
-      $view->registerJsFile($manager->getAssetUrl($this, $file, ArrayHelper::getValue($options, 'appendTimestamp')), $options);
+      $view->registerJsFile($manager->getAssetUrl($this, 'vendor/js/helpers.js'), [
+        'position' => $view::POS_HEAD,
+      ]);
+      $view->registerJsFile($manager->getAssetUrl($this, 'js/config.js'), [
+        'position' => $view::POS_HEAD,
+      ]);
+      
     }
 }

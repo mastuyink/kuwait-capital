@@ -1,6 +1,6 @@
 Yii2 Sneat
 ==========
-Sneat Template Asset Register for yii2
+Sneat Template Asset Register for yii2 With Some Widgets
 
 Installation
 ------------
@@ -20,3 +20,20 @@ or add
 ```
 
 to the require section of your `composer.json` file.
+## Widgets
+
+```php
+// mastuyink\templates\yii2sneat\widgets\Menu;
+// mastuyink\templates\yii2sneat\widgets\Tabs;
+
+```
+## Asset Bundle
+
+```php
+// mastuyink\templates\yii2sneat\TemplateAsset;
+```
+## Layouts Sample
+
+```php
+// mastuyink\templates\yii2sneat\TemplateAsset;
+```
