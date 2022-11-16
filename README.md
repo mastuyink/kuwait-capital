@@ -1,6 +1,7 @@
 Yii2 Sneat
 ==========
-Sneat Template Asset Register for yii2 With Some Widgets
+
+Sneat Free Template Asset Register for yii2 with some yii2 widgets
 
 Installation
 ------------
@@ -10,7 +11,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist mastuyink/yii2-sneat "dev-master"
+composer require mastuyink/yii2-sneat "dev-master"
 ```
 
 or add
@@ -19,21 +20,20 @@ or add
 "mastuyink/yii2-sneat": "dev-master"
 ```
 
-to the require section of your `composer.json` file.
-## Widgets
+to the require section of your `composer.json` file then run `composer update`
 
-```php
-// mastuyink\templates\yii2sneat\widgets\Menu;
-// mastuyink\templates\yii2sneat\widgets\Tabs;
+### Sample views and layouts
 
-```
-## Asset Bundle
+> views
 
-```php
-// mastuyink\templates\yii2sneat\TemplateAsset;
-```
-## Layouts Sample
+### Available Widgets
 
-```php
-// mastuyink\templates\yii2sneat\TemplateAsset;
-```
+> src/widgets
+
+### Template Docs And Ui Components
+
+Visit [Official Docs](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/https:/)
+
+### Template Demo / Preview
+
+Visit [Official Free Template Preview](https://demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/)
