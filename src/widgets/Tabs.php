@@ -40,10 +40,15 @@ namespace mastuyink\templates\yii2sneat\widgets;
 class Tabs extends \yii\bootstrap5\Tabs
 {
 
+  public bool $fullWidth = false;
+
   public function init()
   {
     if($this->navType == 'nav-pills'){
       $this->options['class'] = 'mb-3';
+    }
+    if ($this->fullWidth) {
+      $this->navType .= ' nav-fill';
     }
     parent::init();
   }
@@ -57,13 +62,11 @@ class Tabs extends \yii\bootstrap5\Tabs
   }
 
   public static function pills(array $itemsAndOptions):string{
-    $itemsAndOptions['navType'] = 'nav-pills '.(!empty($itemsAndOptions['navFill']) ? 'nav-fill' : NULL);
-    unset($itemsAndOptions['navFill']);
+    $itemsAndOptions['navType'] = 'nav-pills';
     return self::widget($itemsAndOptions);
   }
   public static function tabs(array $itemsAndOptions):string{
-    $itemsAndOptions['navType'] = 'nav-tabs '.(!empty($itemsAndOptions['navFill']) ? 'nav-fill' : NULL);
-    unset($itemsAndOptions['navFill']);
+    $itemsAndOptions['navType'] = 'nav-tabs';
     return self::widget($itemsAndOptions);
   }
 }
