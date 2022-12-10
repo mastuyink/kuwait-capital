@@ -57,11 +57,13 @@ class Tabs extends \yii\bootstrap5\Tabs
   }
 
   public static function pills(array $itemsAndOptions):string{
-    $itemsAndOptions['navType'] = 'nav-pills';
+    $itemsAndOptions['navType'] = 'nav-pills '.(!empty($itemsAndOptions['navFill']) ? 'nav-fill' : NULL);
+    unset($itemsAndOptions['navFill']);
     return self::widget($itemsAndOptions);
   }
   public static function tabs(array $itemsAndOptions):string{
-    $itemsAndOptions['navType'] = 'nav-tabs';
+    $itemsAndOptions['navType'] = 'nav-tabs '.(!empty($itemsAndOptions['navFill']) ? 'nav-fill' : NULL);
+    unset($itemsAndOptions['navFill']);
     return self::widget($itemsAndOptions);
   }
 }
